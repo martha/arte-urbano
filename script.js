@@ -1,3 +1,7 @@
+images = {
+  
+}
+
 document.addEventListener("DOMContentLoaded", function(event) {
   var classname = document.getElementsByClassName("close-modal");
 
