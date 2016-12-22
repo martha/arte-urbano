@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+#map {
+  height: 100%;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: #383838;
+  color: white;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-family: 'Rock Salt', cursive;
+  font-weight: normal;
+  margin: 0 auto;
+  padding: 0.2em 0.7em;
+  vertical-align: middle;
+  font-size: 1.3em;
+}
+
+#quote {
+  font-style: italic;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.9em;
+  padding: 0 1em;
+}
+
+#modal-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  opacity: 0.8;
+  background-color: black;
+  display: none;
+  text-align: center;
+  /* transition: display 0.5s ease; todo */
+}
+
+#image-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  display: none;
+  text-align: center;
+}
+
+#text-overlay {
+  max-width: 100%;
+  width: 40em;
+  padding: 2em;
+  margin: 2em auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  display: none;
+  background-color: #eeeeee;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.close-modal {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0.6em 1em;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.image {
+  max-width: calc(80% - 4em);
+  max-height: calc(80% - 4em);
+  margin: 10% auto;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#about {
+  font-family: Roboto, sans-serif;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  float: right;
+  color: #5e5e5e;
+  margin: 1em;
+}
+
+@media only screen and (min-width: 620px) {
+  #about {
+    position: fixed;
+    top: 0; right: 0;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .title {
+    font-size: 2em;
+    display: inline-block;
+  }
+
+  #quote {
+    display: inline-block;
+  }
+}

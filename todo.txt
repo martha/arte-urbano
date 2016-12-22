@@ -1,0 +1,8 @@
+images
+add rest of images
+info about the image
+server and database?
+
+modals
+transition
+click out of box to disable modals
