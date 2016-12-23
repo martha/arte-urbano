@@ -1,8 +1,8 @@
-images
-add rest of images
-info about the image
-server and database?
+images:
+fix broken links
+push
 
-modals
-transition
-click out of box to disable modals
+add the new images from today
+show más
+actually write the más información section
+click out of box to disable modals, modal transitions, details así
