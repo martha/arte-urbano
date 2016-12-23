@@ -27,11 +27,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 var map;
+var markers = [];
+
 function initMap() {
   // set up map
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 37.173039, lng: -3.594698},
-    zoom: 16
+    center: {lat: 37.183054, lng: -3.601950},
+    zoom: 14
   });
 
   // request coord data from the backend
@@ -42,7 +44,7 @@ function initMap() {
       var data = JSON.parse(this.responseText);
       if (data.length == 0) { return; }
       for (var i = 0; i < data.length; i++) {
-        addMarker(data[i], i * 50);
+        addMarker(data[i], i * 75);
       }
     }
   };
@@ -68,6 +70,8 @@ function addMarker(filename, timeout) {
       animation: google.maps.Animation.DROP
     })
 
+    markers.add[m];
+
     m.addListener('click', function() {
       var request = 'images/' + filename;
       document.getElementById("image").src = request;
@@ -75,5 +79,9 @@ function addMarker(filename, timeout) {
       document.getElementById("modal-overlay").style.display = "block";
       document.getElementById("image-overlay").style.display = "block";
     });
+
+    // var bounds = new google.maps.LatLngBounds();
+    // bounds.extend(position);
+    // map.fitBounds(bounds);
   }, timeout);
 }

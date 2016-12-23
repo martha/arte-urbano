@@ -1,7 +1,3 @@
-images:
-fix broken links
-push
-
 add the new images from today
 show más
 actually write the más información section
