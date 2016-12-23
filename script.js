@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 var map;
-var markers = [];
+// var markers = [];
 
 function initMap() {
   // set up map
@@ -70,7 +70,7 @@ function addMarker(filename, timeout) {
       animation: google.maps.Animation.DROP
     })
 
-    markers.add[m];
+    // markers.add[m];
 
     m.addListener('click', function() {
       var request = 'images/' + filename;
